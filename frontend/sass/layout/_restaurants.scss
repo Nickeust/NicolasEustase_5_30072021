@@ -1,0 +1,80 @@
+.restaurants {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .restaurants__title {
+    padding-left: 1.5rem;
+    margin: 3rem 0 0 0;
+    @include tablet {
+      text-align: center;
+      font-size: 2rem;
+    }
+  } 
+
+/*! restaurants grid !*/
+.restaurant__cards {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+}
+
+/*! cards restaurants !*/
+.restaurant__card {
+  border-radius: 1.563rem;
+  box-shadow: 0.25rem 0.25rem 0.375rem #aaa;
+  margin: 1.5rem;
+  position: relative;
+  background: #fff;
+}
+
+/*! sticker new!*/
+.restaurant__card-new {  
+  color: #008766;
+  background: $color-tertiary;
+  border: 0.313rem solid #99E2D3;;
+  border-radius: 0.313rem;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+    p {
+      margin: 0;
+    }
+}
+.restaurant__card img {
+  object-fit: cover;
+  border-top-left-radius: 1.563rem;
+  border-top-right-radius: 1.563rem;
+  width: 100%;
+  height: 10rem;
+}
+
+.restaurant__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/*! Restaurant title !*/
+.restaurant__block-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*! like hearth block !*/
+.restaurant__block-hearth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

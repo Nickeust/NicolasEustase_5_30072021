@@ -1,0 +1,19 @@
+{
+  "name": "nicolaseustase_5_30072021",
+  "version": "1.0.0",
+  "description": "Orinoco",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickeust/NicolasEustase_5_30072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickeust/NicolasEustase_5_30072021/issues"
+  },
+  "homepage": "https://github.com/Nickeust/NicolasEustase_5_30072021#readme"
+}

@@ -1,0 +1,35 @@
+/*! Spinner loader logo animation !*/
+@keyframes animation-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: scale(3, 3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*! background spinner loader opacity!*/
+@keyframes loader-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*! animation opacity fill hearth like !*/
+@keyframes fill {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
