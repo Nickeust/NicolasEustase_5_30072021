@@ -1,26 +1,7 @@
-/*! Header !*/
-.header {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*! arrow to back index !*/
-    &__arrow {
-      font-size: 1.3em;
-    margin-bottom: -0.5rem;
-    }
-    /*! Logo Ohmyfood !*/
-    &__logo {
-      text-align: center;
-      font-size: 1.5rem;
-      flex-grow: 0.8;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.1rem;
-    }
-}
-
-/*! img background header !*/
-.header__img img{
-  object-fit: cover;
-  width: 100%;
-  height: 15.625rem;
+    border: 0.313rem solid #99E2D3;;
+    border-radius: 0.313rem;
 }

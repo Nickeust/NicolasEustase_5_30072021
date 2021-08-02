@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="public/css/style.css" />
+        <title>Orinoco</title>
         <script src="./js/index.js"></script>
     </head>
-    <body></body>
+
+    <body>
+        <header>
+            <h1 class="title">Orinoco la boutique de Nounours en ligne</h1>
+        </header>
+
+        <main class="main" id="main">
+            <h2 class="titre main">Tout nos choix de nounours</h2>
+            <template id="templateArticle">
+                <article class="mosaique">
+                    <h3 id="nounours_title" class="nounours_title">Name</h3>
+                    <p id="nounours_price" class="nounours_price">prix</p>
+                    <img src="" id="nounours_img" class="nounours_img"></img>
+                </article>
+            </template>
+        </main>
+
+        <footer>
+            <p>Contact</p>
+        </footer>
+    </body>
 </html>
