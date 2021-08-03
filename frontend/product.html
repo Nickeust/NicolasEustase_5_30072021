@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="public/css/style.css" />
+        <title>Produit</title>
+        <script src="./js/product.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header class="header_block">
+            <a href="/"
+                ><img class="logo" src="./public/images/logo.png" alt="Orinoco"
+            /></a>
+            <nav class="flex_nav">
+                <ul class="ul_nav">
+                    <li><a class="li_nav" href="./order.html">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- HEADER -->
+
+        <!-- PRODUCT -->
+        <section class="product" id="product">
+            <div class="image_block">
+                <img src="" alt="" id="productImage" class="product_Image" />
+            </div>
+            <div class="product_block">
+                <h1 class="product_Name">
+                    Ours en peluche "<span id="productName"></span>"
+                </h1>
+                <div class="ratings">
+                    <img class="star" src="./public/images/star.svg" alt="" />
+                    <img class="star" src="./public/images/star.svg" alt="" />
+                    <img class="star" src="./public/images/star.svg" alt="" />
+                    <img class="star" src="./public/images/star.svg" alt="" />
+                    <img class="star" src="./public/images/star.svg" alt="" />
+                </div>
+                <p id="productDescription" class="product_Description"></p>
+                <h2 class="product_Choise">
+                    Choisir la couleur de votre produit :
+                </h2>
+                <div class="product_Color">
+                    <template id="productColor">
+                        <div class="case" style="background-color: tan"></div>
+                    </template>
+                </div>
+                <button id="buy" class="buy_bouton">
+                    Ajouter au panier pour <span id="productPrice"></span>
+                </button>
+            </div>
+        </section>
+        <!-- PRODUCT -->
+    </body>
+</html>

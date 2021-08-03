@@ -1,7 +1,22 @@
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 0.313rem solid #99E2D3;;
-    border-radius: 0.313rem;
+    width: 100%;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: rgba(243, 233, 241);
+}
+
+.logo {
+    height: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
