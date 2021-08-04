@@ -11,26 +11,90 @@
 
     <body>
         <!-- HEADER -->
-        <header>
-            <h1 class="title">Orinoco la boutique de Nounours en ligne</h1>
+        <header class="header_block">
+            <a href="/"
+                ><img class="logo" src="./public/images/logo.png" alt="Orinoco"
+            /></a>
+            <nav class="flex_nav">
+                <ul class="ul_nav">
+                    <li><a class="li_nav" href="./order.html">Panier</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- HEADER -->
 
-        <!-- PRODUCT -->
-        <main class="main" id="main">
-            <h2 class="titre main">Tout nos choix de nounours</h2>
-            <template id="templateArticle">
-                <article class="mosaique">
-                    <h3 id="nounours_title" class="nounours_title">Name</h3>
-                    <p id="nounours_price" class="nounours_price">prix</p>
-                    <img src="" id="nounours_img" class="nounours_img" />
-                </article>
-            </template>
+        <main class="header">
+            <h1 class="title_header">Tout nos choix de nounours !</h1>
+            <p>
+                Tout nos nounours sont personnalisable est fabriquer en france !
+            </p>
         </main>
-        <!-- PRODUCT -->
+
+        <!-- PRODUCT CONTAINER & LOADING BOXES -->
+        <ul id="productsList" class="products_List">
+            <div class="product_box"></div>
+            <div class="product_box"></div>
+            <div class="product_box"></div>
+            <div class="product_box"></div>
+            <div class="product_box"></div>
+            <div class="product_box"></div>
+        </ul>
+        <!-- PRODUCT CONTAINER & LOADING BOXES -->
+
+        <!-- PRODUCT TEMPLATE -->
+        <template id="product">
+            <li class="grid">
+                <a id="productLink" href="">
+                    <figure>
+                        <img src="" id="productImage" class="product_Image" />
+                        <figcaption class="block_fig">
+                            <div class="block_text">
+                                <h2 id="productName" class="product_Name"></h2>
+                                <div class="ratings">
+                                    <img
+                                        class="star"
+                                        src="./public/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./public/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./public/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./public/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="star"
+                                        src="./public/images/star.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <span
+                                    id="productPrice"
+                                    class="product_Price"
+                                ></span>
+                            </div>
+                            <p
+                                id="productDescription"
+                                class="product_Description"
+                            ></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </template>
+        <!-- PRODUCT TEMPLATE -->
 
         <footer>
-            <p>Contact</p>
+            <a class="contact" href="mailto:Orinoco-Sav.net">Contact</a>
         </footer>
     </body>
 </html>
