@@ -15,17 +15,19 @@ function getArticles() {
             return articles
         })
         .catch(function(error) {
-            alert(error)
+            alert("La connexion au serveur n'a pas pu être effectué. verifiez si le serveur est en ligne!")
         })
 }
 
 function displayArticle(article) {
-    const templateElt = document.getElementById("templateArticle")
+    const templateElt = document.getElementById("product")
     const cloneElt = document.importNode(templateElt.content, true)
 
-    cloneElt.getElementById("nounours_title").textContent = article.name
-    cloneElt.getElementById("nounours_price").textContent = article.price
-    cloneElt.getElementById("nounours_img").src = article.imageUrl
+    cloneElt.getElementById("productImage").src = article.imageUrl
+    cloneElt.getElementById("productName").textContent = article.name
+    cloneElt.getElementById("productPrice").textContent = `${article.price / 100}.00 €`
+    cloneElt.getElementById("productDescription").textContent = article.description
+    cloneElt.getElementById('productLink').href = `/product.html?id=${article._id}`
 
-    document.getElementById("main").appendChild(cloneElt)
+    document.getElementById("productsList").appendChild(cloneElt)
 }
