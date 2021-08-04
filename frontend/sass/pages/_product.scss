@@ -40,6 +40,33 @@ h1 {
     line-height: 1.75rem;
 }
 
+.ratings {
+    align-items: center;
+    display: flex;
+}
+
 .star {
     height: 1.25rem;
+}
+
+.product_Description{
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.buy_bouton {
+    width: 100%;
+    background-color:blueviolet;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 1rem;
 }

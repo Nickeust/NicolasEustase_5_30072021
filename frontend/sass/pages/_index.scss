@@ -1,0 +1,57 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(243, 233, 241);
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.block_text {
+    align-items: center;
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.ratings {
+    margin-right: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+.star {
+    max-width: 100%;
+    display: block;
+}
+
+.product_Price{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255)
+}
+
+.contact {
+    margin: 1rem;
+}

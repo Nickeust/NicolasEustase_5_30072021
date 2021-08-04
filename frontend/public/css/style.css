@@ -12,6 +12,18 @@ header {
   margin: auto;
 }
 
+main {
+  /*! max-width large screen !*/
+  max-width: 1440px;
+  margin: auto;
+}
+
+.products_List {
+  /*! max-width large screen !*/
+  max-width: 1440px;
+  margin: auto;
+}
+
 section {
   /*! max-width large screen !*/
   max-width: 1440px;
@@ -57,12 +69,14 @@ a {
 }
 
 main {
-  background: #1c5d6d;
+  background-color: #f3e9f1;
   display: flex;
-  flex-direction: column;
   padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
 }
-main h2 {
+main h1 {
   text-align: center;
   font-size: 1.5rem;
 }
@@ -89,10 +103,67 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.313rem solid #99E2D3;
-  border-radius: 0.313rem;
-  background: #341c6d;
+  border-radius: 1rem;
+  background-color: #f3e9f1;
   margin-top: 2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f3e9f1;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.block_text {
+  align-items: center;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+h2 {
+  font-size: inherit;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+.ratings {
+  margin-right: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.star {
+  max-width: 100%;
+  display: block;
+}
+
+.product_Price {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.contact {
+  margin: 1rem;
 }
 
 .product {
@@ -137,8 +208,35 @@ h1 {
   line-height: 1.75rem;
 }
 
+.ratings {
+  align-items: center;
+  display: flex;
+}
+
 .star {
   height: 1.25rem;
+}
+
+.product_Description {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.buy_bouton {
+  width: 100%;
+  background-color: blueviolet;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
