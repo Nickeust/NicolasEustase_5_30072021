@@ -1,4 +1,23 @@
-ul {
+.header {
+    background-color: rgba(243, 233, 241);
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+    }
+    p {
+        font-size: 1.2rem;
+        font-family: 'Open Sans';
+    }
+}
+
+.products_List {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
@@ -32,13 +51,14 @@ h2 {
 
 .ratings {
     margin-right: 1rem;
-    align-items: center;
-    display: flex;
 }
 
-.star {
+.fas.fa-star {
     max-width: 100%;
     display: block;
+    color: orange;
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .product_Price{
@@ -54,4 +74,10 @@ h2 {
 
 .contact {
     margin: 1rem;
+    display: flex;
+}
+
+.far.fa-envelope {
+    font-size: 1.2em;
+    padding-bottom: 0.2rem;
 }

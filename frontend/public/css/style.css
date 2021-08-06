@@ -4,6 +4,7 @@ body {
   width: 100%;
   font-size: 1rem;
   background-color: white;
+  font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 header {
@@ -68,35 +69,9 @@ a {
   font-weight: bold;
 }
 
-main {
-  background-color: #f3e9f1;
-  display: flex;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  justify-content: center;
-}
-main h1 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-article {
-  background: rgba(37, 52, 104, 0.637);
-  border: 0.313rem solid #99E2D3;
-  border-radius: 0.313rem;
-  text-align: center;
-  padding: 2rem;
-  margin: 1rem;
-}
-article h3 {
-  font-size: 1.5rem;
-}
-article p {
-  font-size: 1rem;
-}
-article img {
-  width: 50%;
+i {
+  font-size: 1em;
+  margin-right: 1rem;
 }
 
 footer {
@@ -108,7 +83,26 @@ footer {
   margin-top: 2rem;
 }
 
-ul {
+.header {
+  background-color: #f3e9f1;
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0rem;
+}
+.header p {
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+}
+
+.products_List {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
@@ -142,13 +136,14 @@ h2 {
 
 .ratings {
   margin-right: 1rem;
-  align-items: center;
-  display: flex;
 }
 
-.star {
+.fas.fa-star {
   max-width: 100%;
   display: block;
+  color: orange;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 .product_Price {
@@ -164,6 +159,12 @@ h2 {
 
 .contact {
   margin: 1rem;
+  display: flex;
+}
+
+.far.fa-envelope {
+  font-size: 1.2em;
+  padding-bottom: 0.2rem;
 }
 
 .product {
@@ -184,10 +185,9 @@ h2 {
 }
 
 .product_Image {
-  object-fit: cover;
   border-radius: 1rem;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 16rem;
   display: block;
 }
 
@@ -220,6 +220,9 @@ h1 {
 .product_Description {
   text-align: justify;
   margin-top: 1rem;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
 h2 {
