@@ -5,8 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="public/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/3df78d9f56.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Produit</title>
-        <script src="./js/product.js"></script>
+        <script src="./js/product.js" defer></script>
     </head>
 
     <body>
@@ -17,7 +27,11 @@
             /></a>
             <nav class="flex_nav">
                 <ul class="ul_nav">
-                    <li><a class="li_nav" href="./order.html">Panier</a></li>
+                    <li>
+                        <a class="li_nav" href="./order.html"
+                            ><i class="fas fa-shopping-cart"></i>Panier</a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -33,11 +47,11 @@
                     Ours en peluche "<span id="productName"></span>"
                 </h1>
                 <div class="ratings">
-                    <img class="star" src="./public/images/star.svg" alt="" />
-                    <img class="star" src="./public/images/star.svg" alt="" />
-                    <img class="star" src="./public/images/star.svg" alt="" />
-                    <img class="star" src="./public/images/star.svg" alt="" />
-                    <img class="star" src="./public/images/star.svg" alt="" />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <p id="productDescription" class="product_Description"></p>
                 <h2 class="product_Choise">
@@ -54,5 +68,11 @@
             </div>
         </section>
         <!-- PRODUCT -->
+
+        <footer>
+            <a class="contact" href="mailto:Orinoco-Sav.net"
+                ><i class="far fa-envelope"></i>Contact</a
+            >
+        </footer>
     </body>
 </html>

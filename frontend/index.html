@@ -5,8 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="public/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/3df78d9f56.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Orinoco</title>
-        <script src="./js/index.js"></script>
+        <script src="./js/index.js" defer></script>
     </head>
 
     <body>
@@ -17,18 +27,24 @@
             /></a>
             <nav class="flex_nav">
                 <ul class="ul_nav">
-                    <li><a class="li_nav" href="./order.html">Panier</a></li>
+                    <li>
+                        <a class="li_nav" href="./order.html"
+                            ><i class="fas fa-shopping-cart"></i>Panier</a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
         <!-- HEADER -->
 
-        <main class="header">
+        <section class="header">
             <h1 class="title_header">Tout nos choix de nounours !</h1>
             <p>
-                Tout nos nounours sont personnalisable est fabriquer en france !
+                Tout nos nounours sont personnalisable.<br />
+                Ils sont fabriquer en France.<br />
+                Avec des matérieux respéctant l'environement.
             </p>
-        </main>
+        </section>
 
         <!-- PRODUCT CONTAINER & LOADING BOXES -->
         <ul id="productsList" class="products_List">
@@ -51,31 +67,11 @@
                             <div class="block_text">
                                 <h2 id="productName" class="product_Name"></h2>
                                 <div class="ratings">
-                                    <img
-                                        class="star"
-                                        src="./public/images/star.svg"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="star"
-                                        src="./public/images/star.svg"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="star"
-                                        src="./public/images/star.svg"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="star"
-                                        src="./public/images/star.svg"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="star"
-                                        src="./public/images/star.svg"
-                                        alt=""
-                                    />
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
                                 <span
                                     id="productPrice"
@@ -94,7 +90,9 @@
         <!-- PRODUCT TEMPLATE -->
 
         <footer>
-            <a class="contact" href="mailto:Orinoco-Sav.net">Contact</a>
+            <a class="contact" href="mailto:Orinoco-Sav.net"
+                ><i class="far fa-envelope"></i>Contact</a
+            >
         </footer>
     </body>
 </html>
