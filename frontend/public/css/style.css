@@ -242,4 +242,110 @@ h2 {
   border-radius: 1rem;
 }
 
+.order_block {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #f3e9f1;
+}
+.order_block .order_title {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.order_table {
+  width: 100%;
+}
+.order_table .table_row {
+  background-color: white;
+  border-width: 1px;
+}
+.order_table .table_row .table_case {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+tr {
+  background-color: #f3f4f6;
+}
+
+td.total {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+td.total_Price {
+  text-align: center;
+}
+
+.form_section {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #f3e9f1;
+}
+.form_section .form_order_title {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.form_block {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form_row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_row2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2/span 2;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #374151;
+}
+
+.input {
+  border-radius: 0.3rem;
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-color: #d1d5db;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.confirm_button {
+  display: flex;
+  justify-content: flex-end;
+}
+.confirm_button .confirm_Purchase {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.3rem;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: white;
+  background-color: #e54690;
+}
+
 /*# sourceMappingURL=style.css.map */

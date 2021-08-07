@@ -1,0 +1,38 @@
+.order_block {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(243, 233, 241);
+    .order_title {
+        margin-bottom: 0.5rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+.order_table {
+    width: 100%;
+    .table_row {
+        background-color: rgba(255, 255, 255);
+        border-width: 1px;
+        .table_case {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        }
+}
+
+tr {
+    background-color: rgba(243, 244, 246);
+}
+
+td.total {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+td.total_Price {
+    text-align: center;
+}
+
