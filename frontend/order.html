@@ -34,5 +34,137 @@
             </nav>
         </header>
         <!-- HEADER -->
+
+        <!-- ORDER SUMMARY -->
+        <section class="order_block">
+            <h2 class="order_title">Votre commande</h2>
+            <table class="order_table">
+                <thead>
+                    <tr class="table_row">
+                        <th class="table_case">Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="productsList">
+                    <template id="productTemplate">
+                        <tr class="">
+                            <td id="productName" class=""></td>
+                            <td class="">
+                                <form class="flex">
+                                    <select
+                                        id="productQuantity"
+                                        class=""
+                                        name="quantity"
+                                        id="quantity"
+                                    >
+                                        <option value="1">1/option></option>
+                                        <option value="2">2/option></option>
+                                        <option value="3">3/option></option>
+                                        <option value="4">4/option></option>
+                                        <option value="5">5/option></option>
+                                        <option value="6">6/option></option>
+                                        <option value="7">7/option></option>
+                                        <option value="8">8/option></option>
+                                        <option value="9">9/option></option>
+                                        <option value="10">10/option></option>
+                                        <option value="11">11/option></option>
+                                        <option value="12">12/option></option>
+                                    </select>
+                                </form>
+                            </td>
+                            <td id="productPrice" class="">x€</td>
+                            <td id="productTotalPrice" class="">x€</td>
+                        </tr>
+                    </template>
+                    <tr class="">
+                        <td colspan="3" class="total">Total</td>
+                        <td class="total_Price" id="totalPrice">x€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- ORDER SUMMARY -->
+
+        <!-- PURCHASE FORM -->
+        <section class="form_section">
+            <h2 class="form_order_title">Passer commande</h2>
+            <div class="form_block">
+                <div class="form_row">
+                    <label for="firstname" class="label">Prénom</label>
+                    <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        class="input"
+                        required
+                    />
+                </div>
+                <div class="form_row">
+                    <label for="lastname" class="label">Nom</label>
+                    <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        class="input"
+                        required
+                    />
+                </div>
+                <div class="form_row2">
+                    <label for="email" class="label">Adresse e-mail</label>
+                    <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        class="input"
+                        required
+                    />
+                </div>
+                <div class="form_row2">
+                    <label for="adress" class="label">Adresse</label>
+                    <input
+                        type="text"
+                        name="adress"
+                        id="adress"
+                        class="input"
+                        required
+                    />
+                </div>
+                <div class="form_row">
+                    <label for="zipcode" class="label">Code postal</label>
+                    <input
+                        type="text"
+                        name="zipcode"
+                        id="zipcode"
+                        class="input"
+                        required
+                    />
+                </div>
+                <div class="form_row">
+                    <label for="city" class="label">Ville</label>
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        class="input"
+                        required
+                    />
+                </div>
+            </div>
+            <div class="confirm_button">
+                <a id="confirmPurchase" class="confirm_Purchase" href="#">
+                    Procéder au paiement
+                </a>
+            </div>
+        </section>
+        <!-- PURCHASE FORM -->
+
+        <footer>
+            <a class="contact" href="mailto:Orinoco-Sav.net"
+                ><i class="far fa-envelope"></i>Contact</a
+            >
+        </footer>
     </body>
 </html>
