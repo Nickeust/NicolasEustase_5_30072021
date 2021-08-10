@@ -58,9 +58,17 @@
                     Choisir la couleur de votre produit :
                 </h2>
                 <div class="product_Color">
-                    <template id="productColor">
-                        <div class="case" style="background-color: tan"></div>
-                    </template>
+                    <select id="productColor">
+                        <option disable hidden value="" value="select">
+                            --Choisissez la couleur de votre Nounours!--
+                        </option>
+                        <option class="blue" value="blue">Bleu</option>
+                        <option class="green" value="green">Vert</option>
+                        <option class="pink" value="pink">Rose</option>
+                        <option class="brown" value="brown">Marron</option>
+                        <option class="black" value="black">Noir</option>
+                        <option class="white" value="white">Blanc</option>
+                    </select>
                 </div>
                 <button id="buy" class="buy_bouton">
                     Ajouter au panier pour <span id="productPrice"></span>
