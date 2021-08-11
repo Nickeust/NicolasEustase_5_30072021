@@ -26,4 +26,67 @@ function hydrateArticle(article) {
     document.getElementById("productDescription").textContent = article.description
     document.getElementById("productPrice").textContent = `${article.price / 100}.00 €`
     document.getElementById("productImage").src = article.imageUrl
+
+    document.getElementById("buy").onclick = (event) => {
+        event.preventDefault()
+        Cart.addProduct(product)
+        redirectToOrderPage(product.name)
+    }
 }
+
+function redirectToOrderPage(productName) {
+    window.location.href = `order.html?lastAddedProductName=${productName}`
+}
+
+
+
+class CartObject {
+    get products() {
+        return JSON.parse(localStorage.getItem('shoppingCart') || '{}')
+    }
+
+    set products(products) {
+        localStorage.setItem('shoppingCart', JSON.stringify(products))
+    }
+
+    addProduct(productObject) {
+        let products = this.products
+
+        const productAlreadyInCarte = !!products[productObject._id]
+
+        if (productAlreadyInCarte) {
+        // Increase quantity
+        products[productObject._id].quantity++
+        } else {
+            // Add product
+            products[productObject._id] = {
+            quantity: 1,
+            ...productObject,
+            }
+        }
+
+        this.products = products
+    }
+
+    getProductQuantity(productId) {
+        const products = this.products
+        return products[productId].quantity
+    }
+
+    updateProductQuantity(productId, quantity) {
+        const products = this.products
+        products[productId].quantity = quantity
+        console.log(products)
+        this.products = products
+    }
+
+    getTotalPrice() {
+        const products = this.products
+        const totalPrice = Object.values(products).reduce((acc, curr) => {
+            return acc + (curr.price * curr.quantity) / 100
+        }, 0)
+        return totalPrice
+    }
+}
+
+const Cart = new CartObject()
