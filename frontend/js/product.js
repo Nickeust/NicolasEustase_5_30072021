@@ -29,7 +29,7 @@ function hydrateArticle(article) {
 
     document.getElementById("buy").onclick = (event) => {
         event.preventDefault()
-        Cart.addProduct(product)
+        Order.addProduct(product)
         redirectToOrderPage(product.name)
     }
 }
@@ -42,11 +42,11 @@ function redirectToOrderPage(productName) {
 
 class CartObject {
     get products() {
-        return JSON.parse(localStorage.getItem('shoppingCart') || '{}')
+        return JSON.parse(localStorage.getItem('OrderPage') || '{}')
     }
 
     set products(products) {
-        localStorage.setItem('shoppingCart', JSON.stringify(products))
+        localStorage.setItem('OrderPage', JSON.stringify(products))
     }
 
     addProduct(productObject) {
@@ -89,4 +89,4 @@ class CartObject {
     }
 }
 
-const Cart = new CartObject()
+const Order = new CartObject()
