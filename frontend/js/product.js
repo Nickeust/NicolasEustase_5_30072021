@@ -26,10 +26,16 @@ function hydrateArticle(article) {
     document.getElementById("productDescription").textContent = article.description
     document.getElementById("productPrice").textContent = `${article.price / 100}.00 €`
     document.getElementById("productImage").src = article.imageUrl
+    const select = document.getElementById("productColor") 
+        for (const color of article.colors) {
+            select.innerHTML+= `<option>${color}</option>`
+        }
+    
+
 
     document.getElementById("buy").onclick = (event) => {
         event.preventDefault()
-        Order.addProduct(article)
+        Order.addProduct(article,select.value)
         redirectToOrderPage(article.name)
     }
 }
@@ -49,7 +55,7 @@ class CartObject {
         localStorage.setItem('OrderPage', JSON.stringify(products))
     }
 
-    addProduct(productObject) {
+    addProduct(productObject,selectcolor) {
         let products = this.products
 
         const productAlreadyInCarte = !!products[productObject._id]
@@ -62,6 +68,7 @@ class CartObject {
             products[productObject._id] = {
             quantity: 1,
             ...productObject,
+            color:selectcolor
             }
         }
 
