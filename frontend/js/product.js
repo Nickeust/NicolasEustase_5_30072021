@@ -29,13 +29,13 @@ function hydrateArticle(article) {
 
     document.getElementById("buy").onclick = (event) => {
         event.preventDefault()
-        Order.addProduct(product)
-        redirectToOrderPage(product.name)
+        Order.addProduct(article)
+        redirectToOrderPage(article.name)
     }
 }
 
-function redirectToOrderPage(productName) {
-    window.location.href = `order.html?lastAddedProductName=${productName}`
+function redirectToOrderPage(articleName) {
+    window.location.href = `order.html?lastAddedProductName=${articleName}`
 }
 
 
