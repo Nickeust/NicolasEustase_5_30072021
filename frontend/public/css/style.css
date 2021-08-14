@@ -122,6 +122,13 @@ figure {
   margin: 0;
 }
 
+.product_Imagei {
+  border-radius: 1rem;
+  width: 100%;
+  height: 16rem;
+  display: block;
+}
+
 .block_text {
   align-items: center;
   margin-bottom: 0.5rem;
