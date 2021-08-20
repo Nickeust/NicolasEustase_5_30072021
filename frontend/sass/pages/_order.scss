@@ -26,13 +26,11 @@ tr {
     background-color: rgba(243, 244, 246);
 }
 
-td.total {
+td{
     text-align: center;
+}
+
+td.total {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
-td.total_Price {
-    text-align: center;
-}
-

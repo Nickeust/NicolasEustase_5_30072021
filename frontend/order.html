@@ -16,6 +16,7 @@
             crossorigin="anonymous"
         ></script>
         <title>Votre Commande</title>
+        <script src="./js/class.js" defer></script>
         <script src="./js/order.js" defer></script>
     </head>
     <body>
@@ -43,7 +44,8 @@
                 <thead>
                     <tr class="table_row">
                         <th class="table_case">Produit</th>
-                        <th>Quantité</th>
+                        <th>Quantitée</th>
+                        <th>Supprimer</th>
                         <th>Prix</th>
                         <th>Total</th>
                     </tr>
@@ -53,39 +55,25 @@
                     <template id="productTemplate">
                         <tr class="">
                             <td id="productName" class=""></td>
-                            <td class="">
-                                <form class="flex">
-                                    <select
-                                        id="productQuantity"
-                                        class=""
-                                        name="quantity"
-                                        id="quantity"
-                                    >
-                                        <option value="1">1/option></option>
-                                        <option value="2">2/option></option>
-                                        <option value="3">3/option></option>
-                                        <option value="4">4/option></option>
-                                        <option value="5">5/option></option>
-                                        <option value="6">6/option></option>
-                                        <option value="7">7/option></option>
-                                        <option value="8">8/option></option>
-                                        <option value="9">9/option></option>
-                                        <option value="10">10/option></option>
-                                        <option value="11">11/option></option>
-                                        <option value="12">12/option></option>
-                                    </select>
-                                </form>
+                            <td id="productQuantity" class=""></td>
+                            <td>
+                                <a href="#" class="deleteCamera" data-id="${i}">
+                                    <i class="fas fa-trash-alt"></i
+                                ></a>
                             </td>
                             <td id="productPrice" class="">x€</td>
                             <td id="productTotalPrice" class="">x€</td>
                         </tr>
                     </template>
                     <tr class="">
-                        <td colspan="3" class="total">Total</td>
+                        <td colspan="4" class="total">Total</td>
                         <td class="total_Price" id="totalPrice">x€</td>
                     </tr>
                 </tbody>
             </table>
+            <button id="viderPanier" class="viderPanier">
+                <span class="panier">tous le Panier</span>
+            </button>
         </section>
         <!-- ORDER SUMMARY -->
 

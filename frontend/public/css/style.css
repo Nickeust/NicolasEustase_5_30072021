@@ -320,14 +320,13 @@ tr {
   background-color: #f3f4f6;
 }
 
-td.total {
+td {
   text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
-td.total_Price {
-  text-align: center;
+td.total {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .form_section {
@@ -396,6 +395,22 @@ td.total_Price {
   line-height: 1.25rem;
   color: white;
   background-color: #e54690;
+}
+
+.viderPanier {
+  border-radius: 0.3rem;
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: white;
+  background-color: #e54690;
+  font-weight: bold;
+  font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
