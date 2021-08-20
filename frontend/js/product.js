@@ -4,10 +4,12 @@
     hydrateArticle(article)
 })()
 
+//récupération de l'ID de l'ourson de la page
 function getArticleId() {
     return new URL(location.href).searchParams.get("id")
 }
 
+// récupération des données de l'ourson sélectionné par son id
 function getArticle(articleId) {
     return fetch(`http://localhost:3000/api/teddies/${articleId}`)
     .then(function(httpBodyResponse) {
@@ -21,12 +23,15 @@ function getArticle(articleId) {
     })
 }
 
+// Hydratation de la page avec les données de l'ourson sélectionné
 function hydrateArticle(article) {
     document.getElementById("productName").textContent = article.name
     document.getElementById("productDescription").textContent = article.description
     document.getElementById("productPrice").textContent = `${article.price / 100}.00 €`
     document.getElementById("productImage").src = article.imageUrl
+    // création choix couleur
     const select = document.getElementById("productColor") 
+        // ajout des différentes couleurs 
         for (const color of article.colors) {
             select.innerHTML+= `<option>${color}</option>`
         }
@@ -36,6 +41,8 @@ function hydrateArticle(article) {
     document.getElementById("buy").onclick = (event) => {
         event.preventDefault()
         Order.addProduct(article,select.value)
+        console.log("Administration : le produit a été ajouté au panier");
+        alert("Vous avez ajouté ce produit dans votre panier")
         redirectToOrderPage(article.name)
     }
 }
@@ -43,57 +50,3 @@ function hydrateArticle(article) {
 function redirectToOrderPage(articleName) {
     window.location.href = `order.html?lastAddedProductName=${articleName}`
 }
-
-
-
-class CartObject {
-    get products() {
-        return JSON.parse(localStorage.getItem('OrderPage') || '{}')
-    }
-
-    set products(products) {
-        localStorage.setItem('OrderPage', JSON.stringify(products))
-    }
-
-    addProduct(productObject,selectcolor) {
-        let products = this.products
-
-        const productAlreadyInCarte = !!products[productObject._id]
-
-        if (productAlreadyInCarte) {
-        // Increase quantity
-        products[productObject._id].quantity++
-        } else {
-            // Add product
-            products[productObject._id] = {
-            quantity: 1,
-            ...productObject,
-            color:selectcolor
-            }
-        }
-
-        this.products = products
-    }
-
-    getProductQuantity(productId) {
-        const products = this.products
-        return products[productId].quantity
-    }
-
-    updateProductQuantity(productId, quantity) {
-        const products = this.products
-        products[productId].quantity = quantity
-        console.log(products)
-        this.products = products
-    }
-
-    getTotalPrice() {
-        const products = this.products
-        const totalPrice = Object.values(products).reduce((acc, curr) => {
-            return acc + (curr.price * curr.quantity) / 100
-        }, 0)
-        return totalPrice
-    }
-}
-
-const Order = new CartObject()
