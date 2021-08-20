@@ -135,7 +135,7 @@ function sendOrder() {
             firstName: firstname,
             lastName: lastname,
             address: adress + ' ' + zipcode,
-            ity: city,
+            city: city,
             email: email,
         },
         products: products,
